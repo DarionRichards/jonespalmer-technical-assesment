@@ -1,0 +1,29 @@
+.wrapper {
+	width: 100%;
+}
+
+.nav-container {
+	width: 100%;
+	height: 173px;
+	padding-left: 135px;
+	padding-right: 135px;
+	border: 1px solid black;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.jones-palmer-logo {
+	max-width: 343.98px;
+	max-height: 45.06px;
+}
+
+.nav-btn-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-btn-container li {
+	margin: 5px;
+}
