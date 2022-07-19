@@ -1,17 +1,68 @@
+:root {
+	/* Colors: */
+	--unnamed-color-d7d6d6: #d7d6d6;
+	--unnamed-color-b0aeae: #b0aeae;
+	--unnamed-color-888585: #888585;
+	--unnamed-color-615d5d: #615d5d;
+	--unnamed-color-b4d377: #b4d377;
+	--unnamed-color-ecf4dd: #ecf4dd;
+	--unnamed-color-d9e9bb: #d9e9bb;
+	--unnamed-color-c7de99: #c7de99;
+	--unnamed-color-ffffff: #ffffff;
+	--unnamed-color-354c36: #354c36;
+	--unnamed-color-393434: #393434;
+	--unnamed-color-a1c854: #a1c854;
+
+	/* Font/text values */
+	--unnamed-font-family-raleway: raleway, sans-serif;
+	--unnamed-font-style-normal: normal;
+	--unnamed-font-weight-300: 300px;
+	--unnamed-font-weight-600: 600px;
+	--unnamed-font-weight-medium: medium;
+	--unnamed-font-weight-bold: bold;
+	--unnamed-font-size-10: 10px;
+	--unnamed-font-size-14: 14px;
+	--unnamed-font-size-15: 15px;
+	--unnamed-font-size-16: 16px;
+	--unnamed-font-size-18: 18px;
+	--unnamed-font-size-22: 22px;
+	--unnamed-font-size-25: 25px;
+	--unnamed-font-size-30: 30px;
+	--unnamed-font-size-32: 32px;
+	--unnamed-font-size-42: 42px;
+	--unnamed-font-size-68: 68px;
+	--unnamed-character-spacing--0-01: -0.01px;
+	--unnamed-character-spacing--0-02: -0.02px;
+	--unnamed-character-spacing--0-03: -0.03px;
+	--unnamed-line-spacing-14: 14px;
+	--unnamed-line-spacing-19: 19px;
+	--unnamed-line-spacing-25: 25px;
+	--unnamed-line-spacing-27: 27px;
+	--unnamed-line-spacing-30: 30px;
+	--unnamed-line-spacing-36: 36px;
+	--unnamed-line-spacing-46: 46px;
+	--unnamed-line-spacing-74-80000305175781: 74.80000305175781px;
+	--unnamed-line-spacing-31-5: 31.5px;
+	--unnamed-line-spacing-40-5: 40.5px;
+	--unnamed-text-transform-uppercase: uppercase;
+}
+
 .wrapper {
 	width: 100%;
 }
 
-.nav-container {
-	width: 100%;
+.navbar-container {
 	height: 173px;
-	padding-left: 135px;
-	padding-right: 135px;
+	padding: 0 135px;
 	border: 1px solid black;
 	background-color: #ffffff;
+}
+
+.navbar {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: space-evenly;
+	height: 100%;
 }
 
 .jones-palmer-logo {
@@ -25,5 +76,45 @@
 }
 
 .nav-btn-container li {
-	margin: 5px;
+	padding: 20px;
+	text-align: left;
+	text-transform: uppercase;
+	font-family: var(--unnamed-font-family-raleway);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-15);
+	line-height: var(--unnamed-line-spacing-31-5);
+	letter-spacing: var(--unnamed-character-spacing--0-01);
+	text-transform: var(--unnamed-text-transform-uppercase);
+	letter-spacing: -0.01px;
+}
+
+.nav-btn-container li:not(.nav-btn-git) :hover {
+	color: #a1c854;
+}
+
+.nav-btn-git {
+	padding: 20px;
+	background-color: var(--unnamed-color-a1c854);
+	border-radius: 5px;
+	font-family: var(--unnamed-font-family-raleway);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	line-height: var(--unnamed-line-spacing-31-5);
+	text-transform: uppercase;
+}
+
+.nav-btn-git:hover {
+	color: #a1c854;
+	background-color: #393434;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 1500px) {
+	.navbar-container {
+		padding: 0 15px;
+	}
+	.nav-btn-container li {
+		padding: 10px;
+	}
 }
