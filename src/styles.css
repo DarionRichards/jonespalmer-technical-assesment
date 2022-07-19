@@ -110,6 +110,62 @@
 	border-radius: 5px;
 }
 
+.page-middle-background {
+	width: 100%;
+	background-color: #393434;
+}
+
+.page-middle {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	max-width: 1920px;
+	max-height: 991px;
+	width: 100%;
+}
+
+/* .page-m-left,
+.page-m-right {
+	width: 50%;
+} */
+
+.page-m-right-img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+.page-m-left {
+	padding: 200px;
+	height: 100%;
+}
+
+.page-m-left-content {
+	display: flex;
+	flex-direction: column;
+	max-height: 991px;
+	gap: 1rem;
+}
+
+.page-m-left-content-title {
+	color: #d7d6d6;
+	font-family: var(--unnamed-font-family-raleway);
+	font-size: 18px;
+	letter-spacing: -0.01px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.page-m-left-content-header {
+	color: #d7d6d6;
+	font-family: var(--unnamed-font-family-raleway);
+	font-size: 18px;
+	text-align: left;
+	font: normal normal medium 42px/46px Raleway;
+	letter-spacing: -0.02px;
+}
+
 @media screen and (max-width: 1500px) {
 	.navbar-container {
 		padding: 0 15px;

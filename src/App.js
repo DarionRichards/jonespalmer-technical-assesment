@@ -2,6 +2,7 @@ import "./reset.css";
 import "./styles.css";
 
 import {Navbar} from "./components/Navbar";
+import {PageMiddle} from "./components/PageMiddle";
 
 export const App = () => {
 	return (
@@ -10,7 +11,7 @@ export const App = () => {
 				<Navbar />
 			</header>
 			<main>
-				<h1>Hello from React</h1>
+				<PageMiddle />
 			</main>
 		</div>
 	);
