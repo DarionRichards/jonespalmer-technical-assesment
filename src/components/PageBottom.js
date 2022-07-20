@@ -1,3 +1,5 @@
+import {partnerData} from "../data/partnerData";
+
 export const PageBottom = () => {
 	return (
 		<section className="page-bottom-background">
@@ -17,14 +19,9 @@ export const PageBottom = () => {
 					</q>
 				</div>
 				<div className="page-b-partner-container">
-					{/* ADD ALT TEXT */}
-					<img src="https://www.jonesandpalmer.co.uk/media/2030/logos_augean.png" />
-					<img src="https://www.jonesandpalmer.co.uk/media/2029/logos_animalcarev2.png" />
-					<img src="https://www.jonesandpalmer.co.uk/media/2839/barratts-logo.png" />
-					<img src="https://www.jonesandpalmer.co.uk/media/2031/logos_bodycote.png" />
-					<img src="https://www.jonesandpalmer.co.uk/media/2840/digitalcatapult-logo.png" />
-					<img src="https://www.jonesandpalmer.co.uk/media/2841/kenmare-logo.png" />
-					<img src="https://www.jonesandpalmer.co.uk/media/2842/keyston-logo.png" />
+					{partnerData.map((partner) => {
+						return <img src={partner.src} alt={partner.alt} />;
+					})}
 				</div>
 			</section>
 		</section>
