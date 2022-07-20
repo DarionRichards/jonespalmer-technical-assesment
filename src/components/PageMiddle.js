@@ -1,7 +1,7 @@
 export const PageMiddle = () => {
 	return (
 		<section className="page-middle-background">
-			<section className="page-middle">
+			<section className="page-middle-container">
 				<div className="page-m-left">
 					<div className="page-m-left-content">
 						<div className="page-m-left-content-title">What We Do</div>

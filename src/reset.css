@@ -14,6 +14,11 @@ a {
 	color: unset;
 }
 
+h2 {
+	margin: unset;
+	font-size: 42px;
+}
+
 p {
 	margin: unset;
 }

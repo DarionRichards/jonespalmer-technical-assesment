@@ -51,6 +51,8 @@
 	width: 100%;
 }
 
+/* Navigation Bar Styles */
+
 .navbar-container {
 	height: 173px;
 	padding: 0 135px;
@@ -109,12 +111,14 @@
 	border-radius: 5px;
 }
 
+/* Middle Section Styling of Page */
+
 .page-middle-background {
 	width: 100%;
 	background-color: #393434;
 }
 
-.page-middle {
+.page-middle-container {
 	margin: auto;
 	display: flex;
 	flex-direction: row;
@@ -244,6 +248,74 @@
 
 .page-m-left-button.corpbrand.image:hover {
 	background-image: url(https://www.jonesandpalmer.co.uk/img/svg/branding.svg);
+}
+
+/* Bottom Section of Page */
+
+.page-bottom-background {
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.page-bottom-container {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	margin: auto;
+	max-width: 1479px;
+	padding: 160.54px 220px;
+}
+
+.page-b-title {
+	font-family: var(--unnamed-font-family-raleway);
+	font-size: 18px;
+	font-weight: 600;
+	color: #d7d6d6;
+	text-transform: uppercase;
+	line-height: 31.5px;
+	letter-spacing: -0.01px;
+}
+
+.page-b-paragraph-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.page-b-paragraph.left {
+	color: #393434;
+	text-align: left;
+	font-family: var(--unnamed-font-family-raleway);
+	font-weight: 500;
+	line-height: 46px;
+	letter-spacing: -0.02px;
+	max-width: 645px;
+}
+
+.page-b-paragraph.left .green {
+	color: #a1c854;
+}
+
+.page-b-paragraph.right {
+	color: #393434;
+	text-align: left;
+	font-family: var(--unnamed-font-family-raleway);
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 40.5px;
+	letter-spacing: -0.01px;
+	max-width: 684px;
+}
+
+.page-b-paragraph.right .bold {
+	font-weight: 500;
+}
+
+.page-b-partner-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 @media screen and (max-width: 1500px) {

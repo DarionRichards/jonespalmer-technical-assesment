@@ -3,6 +3,7 @@ import "./styles.css";
 
 import {Navbar} from "./components/Navbar";
 import {PageMiddle} from "./components/PageMiddle";
+import {PageBottom} from "./components/PageBottom";
 
 export const App = () => {
 	return (
@@ -12,6 +13,7 @@ export const App = () => {
 			</header>
 			<main>
 				<PageMiddle />
+				<PageBottom />
 			</main>
 		</div>
 	);
