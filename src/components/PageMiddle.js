@@ -5,28 +5,42 @@ export const PageMiddle = () => {
 				<div className="page-m-left">
 					<div className="page-m-left-content">
 						<div className="page-m-left-content-title">What We Do</div>
-						<div className="page-m-left-content-header">
-							<p>We make business</p>
-							<p>understandable.</p>
-						</div>
 						<div>
-							Our consultancy lead approach get us to the heart of your story,
-							helping to structure your investment case and key messages through
-							innovative and informed design.
+							<p className="page-m-left-content-header top">We make business</p>
+							<p className="page-m-left-content-header bottom">
+								understandable
+								<span className="page-m-left-content-header top">.</span>
+							</p>
 						</div>
-						<button>Corporate reporting</button>
-						<button>Sustainability</button>
-						<button>Corporate brand development</button>
+						<div className="page-m-left-content-description-container">
+							<p className="page-m-left-description page-m-left-content-description-light">
+								Our{" "}
+								<span className="page-m-left-content-description-medium">
+									consultancy-led approach gets us to the heart of your story,
+								</span>{" "}
+								helping to structure your investment case and key messages
+								through innovative and informed design.
+							</p>
+						</div>
+						<div className="page-m-left-button-container">
+							<a href="/" className="page-m-left-button corp image">
+								Corporate reporting
+							</a>
+							<a href="/" className="page-m-left-button sust image">
+								Sustainability
+							</a>
+							<a href="/" className="page-m-left-button corpbrand image">
+								Corporate brand development
+							</a>
+						</div>
 					</div>
 				</div>
 				<div className="page-m-right">
-					<a href="https://placeholder.com">
-						<img
-							src="https://via.placeholder.com/1017x991"
-							alt="placeholder"
-							className="page-m-right-img"
-						/>
-					</a>
+					<img
+						src="https://via.placeholder.com/1017x991"
+						alt="placeholder"
+						className="page-m-right-img"
+					/>
 				</div>
 			</section>
 		</section>

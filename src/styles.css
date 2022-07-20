@@ -14,7 +14,7 @@
 	--unnamed-color-a1c854: #a1c854;
 
 	/* Font/text values */
-	--unnamed-font-family-raleway: raleway, sans-serif;
+	--unnamed-font-family-raleway: "Raleway", sans-serif;
 	--unnamed-font-style-normal: normal;
 	--unnamed-font-weight-300: 300px;
 	--unnamed-font-weight-600: 600px;
@@ -119,16 +119,17 @@
 	margin: auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: center;
 	max-width: 1920px;
-	max-height: 991px;
+	max-height: fit-content;
 	width: 100%;
 }
 
-/* .page-m-left,
 .page-m-right {
+	display: flex;
+	max-height: fit-content;
 	width: 50%;
-} */
+}
 
 .page-m-right-img {
 	max-width: 100%;
@@ -137,15 +138,17 @@
 }
 
 .page-m-left {
-	padding: 200px;
-	height: 100%;
+	width: 50%;
 }
 
 .page-m-left-content {
 	display: flex;
 	flex-direction: column;
+	min-width: 365px;
+	max-width: 636px;
 	max-height: 991px;
-	gap: 1rem;
+	gap: 3rem;
+	padding: 130px 200px;
 }
 
 .page-m-left-content-title {
@@ -158,12 +161,90 @@
 }
 
 .page-m-left-content-header {
-	color: #d7d6d6;
-	font-family: var(--unnamed-font-family-raleway);
-	font-size: 18px;
 	text-align: left;
-	font: normal normal medium 42px/46px Raleway;
+	font-family: var(--unnamed-font-family-raleway);
+	font-weight: var(--unnamed-font-weight-medium);
+	font-size: 42px;
 	letter-spacing: -0.02px;
+	line-height: 45px;
+}
+
+.page-m-left-content-header.top {
+	color: #ffffff;
+}
+
+.page-m-left-content-header.bottom {
+	color: #a1c854;
+}
+
+.page-m-left-content-description-container {
+	max-width: 523px;
+}
+
+.page-m-left-description {
+	text-align: left;
+	font-size: 30px;
+	font-family: var(--unnamed-font-family-raleway);
+	line-height: 45px;
+	color: #ffffff;
+}
+
+.page-m-left-content-description-light {
+	font-weight: 300;
+}
+.page-m-left-content-description-medium {
+	font-weight: 500;
+}
+
+.page-m-left-button-container {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.page-m-left-button.corp,
+.page-m-left-button.sust,
+.page-m-left-button.corpbrand {
+	background: no-repeat center left;
+	background-size: 56.75px 56.75px;
+	color: #ffffff;
+	font-family: var(--unnamed-font-family-raleway);
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 30px;
+	letter-spacing: -0.01px;
+	max-width: 371.58px;
+	padding: 20px 80px;
+	text-align: left;
+}
+
+.page-m-left-button:hover {
+	color: #a1c854;
+	transition: 0.3s ease;
+}
+
+.page-m-left-button.corp.image {
+	background-image: url(https://www.jonesandpalmer.co.uk/img/svg/annual-reports-white.svg);
+}
+
+.page-m-left-button.corp.image:hover {
+	background-image: url(https://www.jonesandpalmer.co.uk/img/svg/annual-reports.svg);
+}
+
+.page-m-left-button.sust.image {
+	background-image: url(https://www.jonesandpalmer.co.uk/img/svg/sustainability-icon-white.svg);
+}
+
+.page-m-left-button.sust.image:hover {
+	background-image: url(https://www.jonesandpalmer.co.uk/img/svg/sustainability-icon-green.svg);
+}
+
+.page-m-left-button.corpbrand.image {
+	background-image: url(https://www.jonesandpalmer.co.uk/img/svg/branding-white.svg);
+}
+
+.page-m-left-button.corpbrand.image:hover {
+	background-image: url(https://www.jonesandpalmer.co.uk/img/svg/branding.svg);
 }
 
 @media screen and (max-width: 1500px) {
@@ -172,5 +253,8 @@
 	}
 	.nav-btn-container li {
 		padding: 10px;
+	}
+	.page-m-left-content {
+		padding: 130px 100px;
 	}
 }
