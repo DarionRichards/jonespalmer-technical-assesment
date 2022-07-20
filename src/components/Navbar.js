@@ -1,4 +1,5 @@
 import JonesPalmerLogo from "../assets/JP-LOGO.jpg";
+import {topMenu} from "../data/navbar/topMenu";
 
 export const Navbar = () => {
 	return (
@@ -16,36 +17,20 @@ export const Navbar = () => {
 					</div>
 					<nav>
 						<ul className="nav-btn-container">
-							<li>
-								<a href="/" title="About">
-									About Us
-								</a>
-							</li>
-							<li>
-								<a href="/" title="Services">
-									Services
-								</a>
-							</li>
-							<li>
-								<a href="/" title="Our Work">
-									Our Work
-								</a>
-							</li>
-							<li>
-								<a href="/" title="Thinking">
-									Thinking
-								</a>
-							</li>
-							<li>
-								<a href="/" title="Careers">
-									Careers
-								</a>
-							</li>
-							<li className="nav-btn-git">
-								<a href="/" title="Get in touch">
-									Get In Touch
-								</a>
-							</li>
+							{topMenu.map((item, i) => {
+								return (
+									<li
+										key={i}
+										className={
+											item.title === "Get In Touch" ? "nav-btn-git" : null
+										}
+									>
+										<a href={item.href} title={item.title}>
+											{item.title}
+										</a>
+									</li>
+								);
+							})}
 						</ul>
 					</nav>
 				</section>

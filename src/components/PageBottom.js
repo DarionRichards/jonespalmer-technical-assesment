@@ -19,8 +19,8 @@ export const PageBottom = () => {
 					</q>
 				</div>
 				<div className="page-b-partner-container">
-					{partnerData.map((partner) => {
-						return <img src={partner.src} alt={partner.alt} />;
+					{partnerData.map((partner, i) => {
+						return <img src={partner.src} alt={partner.alt} key={i} />;
 					})}
 				</div>
 			</section>
