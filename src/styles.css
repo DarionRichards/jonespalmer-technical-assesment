@@ -181,7 +181,6 @@
 .page-m-left-content {
 	display: flex;
 	flex-direction: column;
-	min-width: 365px;
 	max-width: 636px;
 	max-height: 991px;
 	gap: 3rem;
@@ -443,6 +442,42 @@
 }
 
 @media screen and (max-width: 768px) {
+	.navbar-container {
+		height: 125px;
+	}
+	.jones-palmer-logo {
+		max-width: 250px;
+	}
+
+	/* Middle Section of Page */
+	.page-m-left {
+		width: unset;
+		padding: 20px;
+	}
+	.page-m-left-content {
+		gap: 2rem;
+		padding: 50px 0;
+	}
+	.page-m-left-content-title {
+		font-size: 15px;
+	}
+	.page-m-left-content-header {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.page-m-left-description {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.page-m-left-button-container {
+		gap: 1rem;
+	}
+	.page-m-left-button.corp,
+	.page-m-left-button.sust,
+	.page-m-left-button.corpbrand {
+		font-size: 18px;
+	}
+
 	/* Bottom Section of Page */
 	.page-bottom-container {
 		padding: 50px;
@@ -459,5 +494,32 @@
 		padding: 50px 0 78px 15px;
 		font-size: 20px;
 		line-height: 24.5px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.navbar-container {
+		height: 100px;
+	}
+	.jones-palmer-logo {
+		max-width: 180px;
+	}
+	/* Middle Section of Page */
+	.page-m-left-content-title {
+		font-size: 13px;
+	}
+	.page-m-left-content-header {
+		font-size: 25px;
+	}
+	.page-m-left-description {
+		line-height: 20px;
+	}
+	.page-m-left-button-container {
+		width: 100%;
+	}
+	.page-m-left-button.corp,
+	.page-m-left-button.sust,
+	.page-m-left-button.corpbrand {
+		font-size: 18px;
 	}
 }

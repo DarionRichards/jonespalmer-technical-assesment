@@ -9,7 +9,7 @@ export const Navbar = () => {
 	return (
 		<section className="navbar-container">
 			<section className="navbar">
-				<div className="navbar-logo">
+				<div>
 					<a href="/">
 						<img
 							className="jones-palmer-logo"
