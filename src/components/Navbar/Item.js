@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Dropdown} from "./Dropdown";
+import {DesktopDropdown} from "./DesktopNavbar/DesktopDropdown";
 
 export const Item = ({item, key}) => {
 	let [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ export const Item = ({item, key}) => {
 					<button type="button" aria-haspopup="menu">
 						{item.title}
 					</button>
-					<Dropdown
+					<DesktopDropdown
 						subMenus={item.subMenu}
 						isOpen={isOpen}
 						setIsOpen={setIsOpen}

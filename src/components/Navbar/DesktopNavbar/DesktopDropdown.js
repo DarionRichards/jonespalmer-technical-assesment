@@ -1,4 +1,4 @@
-export const Dropdown = ({subMenus, isOpen, setIsOpen}) => {
+export const DesktopDropdown = ({subMenus, isOpen, setIsOpen}) => {
 	return (
 		<ul
 			className="nav-dropdown-content"
