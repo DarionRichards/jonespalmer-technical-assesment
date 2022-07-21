@@ -24,13 +24,15 @@ export const PageMiddle = () => {
 						</div>
 						<div className="page-m-left-button-container">
 							<a href="/" className="page-m-left-button corp image">
-								Corporate reporting
+								<span>Corporate reporting</span>
 							</a>
+
 							<a href="/" className="page-m-left-button sust image">
-								Sustainability
+								<span>Sustainability</span>
 							</a>
+
 							<a href="/" className="page-m-left-button corpbrand image">
-								Corporate brand development
+								<span>Corporate brand development</span>
 							</a>
 						</div>
 					</div>
