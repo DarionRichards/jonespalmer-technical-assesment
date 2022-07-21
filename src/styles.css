@@ -79,7 +79,6 @@
 .nav-btn-container li {
 	padding: 20px;
 	text-align: left;
-	text-transform: uppercase;
 	font-family: var(--unnamed-font-family-raleway);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-bold);
@@ -109,6 +108,31 @@
 	color: #a1c854;
 	background-color: #393434;
 	border-radius: 5px;
+}
+
+.nav-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.nav-dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #393434;
+	border-radius: 0px 0px 5px 5px;
+	margin: 11px 0 0 0;
+	width: 230px;
+}
+
+.nav-dropdown-content .text {
+	color: #ffffff;
+	border-top: 0.5px solid #d7d6d6;
+	font-size: 17px;
+	font-weight: 300;
+	text-transform: none;
+	padding: 5px 18px;
+	letter-spacing: -0.01px;
+	line-height: 25px;
 }
 
 /* Middle Section Styling of Page */

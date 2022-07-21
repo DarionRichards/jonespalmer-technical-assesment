@@ -1,5 +1,6 @@
-import JonesPalmerLogo from "../assets/JP-LOGO.jpg";
-import {topMenu} from "../data/navbar/topMenu";
+import JonesPalmerLogo from "../../assets/JP-LOGO.jpg";
+import {topMenu} from "../../data/navbar/topMenu";
+import {Item} from "./Item";
 
 export const Navbar = () => {
 	return (
@@ -18,18 +19,7 @@ export const Navbar = () => {
 					<nav>
 						<ul className="nav-btn-container">
 							{topMenu.map((item, i) => {
-								return (
-									<li
-										key={i}
-										className={
-											item.title === "Get In Touch" ? "nav-btn-git" : null
-										}
-									>
-										<a href={item.href} title={item.title}>
-											{item.title}
-										</a>
-									</li>
-								);
+								return <Item item={item} key={i} />;
 							})}
 						</ul>
 					</nav>
