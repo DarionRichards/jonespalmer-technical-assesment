@@ -379,6 +379,17 @@
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	/* Middle Section of Page */
+	.page-m-left-content {
+		justify-content: center;
+		padding: 100px 0;
+		width: unset;
+	}
+	.page-m-right {
+		display: none;
+	}
+}
 @media screen and (max-width: 768px) {
 	/* Bottom Section of Page */
 	.page-bottom-container {
